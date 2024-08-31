@@ -23,8 +23,6 @@ router.post('/login', (req, res) => {
         return res.status(200).send({message: "Logged in!"})
     })
 
-    //This is an example
-
     connection.end()
 })
 
