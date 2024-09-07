@@ -6,10 +6,6 @@ var {sqlConnect} = require('../services/mysql-service')
 let table_name = "user"
 
 router.post('/login', (req, res) => {
-    //Step 1: Get all users with provided username or LIMIT 1
-    //Step 2 : Check if row length >= 1
-    //Step 3: Compare passwords
-    // Step 4: If all is right, authenticate
     let connection = sqlConnect()
     connection.connect()
 
